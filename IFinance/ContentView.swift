@@ -6,16 +6,20 @@
 //
 
 import SwiftUI
+var number: Int = 0
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack{
+            NavigationSplitView {
+                Text("IFinance").foregroundColor(.primary)
+                Button("Settings"){
+                    SettingsView()
+                }
+            } detail: {
+                /*@START_MENU_TOKEN@*/Text("Detail")/*@END_MENU_TOKEN@*/
+            }
         }
-        .padding()
     }
 }
 

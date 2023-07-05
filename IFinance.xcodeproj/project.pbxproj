@@ -14,6 +14,7 @@
 		7254B2CA2A54F48F00495188 /* IFinanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7254B2C92A54F48F00495188 /* IFinanceTests.swift */; };
 		7254B2D42A54F48F00495188 /* IFinanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7254B2D32A54F48F00495188 /* IFinanceUITests.swift */; };
 		7254B2D62A54F48F00495188 /* IFinanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7254B2D52A54F48F00495188 /* IFinanceUITestsLaunchTests.swift */; };
+		729C7C002A55A406004D56FE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C7BFF2A55A406004D56FE /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		7254B2CF2A54F48F00495188 /* IFinanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IFinanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7254B2D32A54F48F00495188 /* IFinanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFinanceUITests.swift; sourceTree = "<group>"; };
 		7254B2D52A54F48F00495188 /* IFinanceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFinanceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		729C7BFF2A55A406004D56FE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				7254B2BB2A54F48F00495188 /* Assets.xcassets */,
 				7254B2C02A54F48F00495188 /* IFinance.entitlements */,
 				7254B2BD2A54F48F00495188 /* Preview Content */,
+				729C7BFF2A55A406004D56FE /* SettingsView.swift */,
 			);
 			path = IFinance;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				729C7C002A55A406004D56FE /* SettingsView.swift in Sources */,
 				7254B2BA2A54F48E00495188 /* ContentView.swift in Sources */,
 				7254B2B82A54F48E00495188 /* IFinanceApp.swift in Sources */,
 			);
