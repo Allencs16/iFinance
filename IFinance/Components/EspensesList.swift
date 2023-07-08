@@ -7,15 +7,10 @@
 
 import SwiftUI
 
-struct Expense: Identifiable{
-    let expense: String
-    let value: String
-    let id = UUID()
-}
-
 struct EspensesList: View {
     @State private var expensesList = [
-        Expense(expense: "groceries", value: "20")
+        Expense(expense: "groceries", value: "20"),
+        Expense(expense: "snacks", value: "5")
     ]
     var body: some View {
         VStack{

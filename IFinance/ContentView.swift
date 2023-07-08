@@ -53,6 +53,13 @@ struct ContentView: View {
                     }.padding(.top)
                     EspensesList()
                 }
+            }.toolbar{
+                ToolbarItem(placement: .automatic){
+                    Button(action: {
+                    }){
+                        Image(systemName: "plus")
+                    }
+                }
             }
         }
     }
