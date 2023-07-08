@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		721E1B7C2A58F17D007B22D5 /* EspensesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721E1B7B2A58F17D007B22D5 /* EspensesList.swift */; };
 		7254B2B82A54F48E00495188 /* IFinanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7254B2B72A54F48E00495188 /* IFinanceApp.swift */; };
 		7254B2BA2A54F48E00495188 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7254B2B92A54F48E00495188 /* ContentView.swift */; };
 		7254B2BC2A54F48F00495188 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7254B2BB2A54F48F00495188 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		721E1B7B2A58F17D007B22D5 /* EspensesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EspensesList.swift; sourceTree = "<group>"; };
 		7254B2B42A54F48E00495188 /* IFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7254B2B72A54F48E00495188 /* IFinanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFinanceApp.swift; sourceTree = "<group>"; };
 		7254B2B92A54F48E00495188 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		721E1B7A2A58F15C007B22D5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				721E1B7B2A58F17D007B22D5 /* EspensesList.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		7254B2AB2A54F48E00495188 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		7254B2B62A54F48E00495188 /* IFinance */ = {
 			isa = PBXGroup;
 			children = (
+				721E1B7A2A58F15C007B22D5 /* Components */,
 				7254B2B72A54F48E00495188 /* IFinanceApp.swift */,
 				7254B2B92A54F48E00495188 /* ContentView.swift */,
 				7254B2BB2A54F48F00495188 /* Assets.xcassets */,
@@ -265,6 +276,7 @@
 				729C7C002A55A406004D56FE /* SettingsView.swift in Sources */,
 				7254B2BA2A54F48E00495188 /* ContentView.swift in Sources */,
 				7254B2B82A54F48E00495188 /* IFinanceApp.swift in Sources */,
+				721E1B7C2A58F17D007B22D5 /* EspensesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,37 +8,50 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var firstNumber: Int = 0;
+    @State var expenses: Int = 0;
+    @State var money: Int = 0;
     var body: some View {
         VStack{
             NavigationSplitView {
-                Text("IFinance").foregroundColor(.primary)
                 Button(action: {
-                    firstNumber += 1
-                    print("Teste \(firstNumber)")
+                    money += 1
                 }){
-                    Text("Settings")
+                    Text("Add money")
+                }
+                Button(action: {
+                    expenses += 1
+                }){
+                    Text("Add expenses")
                 }
             } detail: {
                 VStack{
                     HStack{
                         VStack{
-                            Text("Dinheiro disponivel").font(.title2)
-                            Text("$\(firstNumber)").font(.title2)
+                            Text("Money").font(.title2)
+                            Text("$\(money)").font(.title2)
                         }.padding(.all)
-                            .background(Color.white)
+                            .background(Color.green)
                             .opacity(0.4)
-                            .cornerRadius(20)
+                            .cornerRadius(10)
                             .shadow(radius: 5)
                         VStack{
-                            Text("Dinheiro disponivel").font(.title2)
-                            Text("$\(firstNumber)").font(.title2)
+                            Text("Expenses").font(.title2)
+                            Text("$\(expenses)").font(.title2)
                         }.padding(.all)
-                            .background(Color.white)
+                            .background(Color.red)
                             .opacity(0.4)
-                            .cornerRadius(20)
+                            .cornerRadius(10)
                             .shadow(radius: 5)
-                    }
+                        VStack{
+                            Text("Remaining").font(.title2)
+                            Text("$\(money - expenses)").font(.title2)
+                        }.padding(.all)
+                            .background(Color.orange)
+                            .opacity(0.4)
+                            .cornerRadius(10)
+                            .shadow(radius: 5)
+                    }.padding(.top)
+                    EspensesList()
                 }
             }
         }

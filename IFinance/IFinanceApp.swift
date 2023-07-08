@@ -28,7 +28,9 @@ struct IFinanceApp: App {
             ContentView()
         }
         
-        
+        Settings{
+            SettingsView()
+        }
 #endif
     }
 }
