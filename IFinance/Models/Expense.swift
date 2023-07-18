@@ -1,8 +1,8 @@
 //
-//  Expenses.swift
+//  Expense.swift
 //  IFinance
 //
-//  Created by Breno Alencar on 08/07/23.
+//  Created by Breno Alencar on 10/07/23.
 //
 
 import Foundation

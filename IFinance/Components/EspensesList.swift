@@ -9,8 +9,7 @@ import SwiftUI
 
 struct EspensesList: View {
     @State private var expensesList = [
-        Expense(expense: "groceries", value: "20"),
-        Expense(expense: "snacks", value: "5")
+        Expense(expense: "Snacks", value: "10", date: Date(), parcels: 10)
     ]
     var body: some View {
         VStack{

@@ -13,15 +13,15 @@ struct ContentView: View {
     var body: some View {
         VStack{
             NavigationSplitView {
-                Button(action: {
-                    money += 1
-                }){
-                    Text("Add money")
-                }
-                Button(action: {
-                    expenses += 1
-                }){
-                    Text("Add expenses")
+                NavigationView {
+                    VStack{
+                        NavigationLink(destination: AddExpenses()){
+                            Text("add expenses")
+                        }
+                        NavigationLink(destination: AddMoney()){
+                            Text("Add money")
+                        }
+                    }
                 }
             } detail: {
                 VStack{
@@ -56,6 +56,7 @@ struct ContentView: View {
             }.toolbar{
                 ToolbarItem(placement: .automatic){
                     Button(action: {
+                        money += 1
                     }){
                         Image(systemName: "plus")
                     }
