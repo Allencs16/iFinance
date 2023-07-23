@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct AddMoney: View {
+    @State private var value: String = ""
+    @State private var category: String = ""
     var body: some View {
-        Text("Add Money.")
+        VStack {
+            Text("Add money")
+            Form {
+                HStack{
+                    TextField("Value", text: $value)
+                        .frame(width: 400)
+                    Menu("Category"){
+                        Button("Health"){
+                            category = "Health"
+                        }
+                        Button("Groceries"){
+                            category = "Groceries"
+                        }
+                    }.frame(width: 100)
+                }
+            }
+            Button("Submit"){
+                print(value + category)
+            }
+        }
     }
 }
 
